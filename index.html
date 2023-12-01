@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catblog</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <img src="./assets/logo.svg" alt="logotipo">
+            <label for="search">Pesquise por artigos</label>
+            <input id="search" type="text" placeholder="Pesquise por artigos">
+            <img class="avatar" src="https://randomuser.me/api/portraits/men/10.jpg" alt="user avatar"> 
+        </header>
+        <main> 
+            <div class="article">
+                <img class="big-image" src="https://s3-alpha-sig.figma.com/img/c0c6/cdf1/a1594b7299539801368c0c67e82c1b97?Expires=1702252800&Signature=V~sO5zzxH2oRlUa4apHBv3lc1WYdI6gdfczsHRHq9VlL2~0R7EbNHHYRxv7ewnl0GpDotQtfg-qkPcxV66sKXgev5DES1nEEO2jJb7KItbo6S8GvipDoV38cRYzJevtl-0jjwybwXBWTNd1hZk1C3rkYSu~Blzer9a6gkhHcdqCFYzdAK2B~cdIZeyh3XaYZkvjBkeCIzP5Oe7HASh6Ep7KqnwFjUZaS6citafoXpDO8Js6wQjy0ZOU8wfxwHeugrzaXfd~l3l1qgq9LYOzkvkCuYMq-T1ouThp7qACETaTcqUijM6Dt93fi7MPayYgUIytz4XvZF3KySDNM5WRUjw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="imagem de gato">
+                <div class="title">
+                    <h1>Seriam os gatos astronautas?</h1>
+                    <div class="buttons">
+                    <button id="like"><img src="./assets/like.svg" alt=""></button>
+                    <button id="dislike"><img src="./assets/dislike.svg" alt=""></button>
+                    </div>
+                </div>
+                <p>Os gatos são animais fascinantes e cercados de mistérios. De temperamento independente e misterioso, esses felinos são conhecidos por sua agilidade, elegância e um comportamento muitas vezes imprevisível. Contudo, recentemente, uma teoria tem ganhado espaço na internet e entre teóricos de conspiração: seriam os gatos astronautas?<br><br>
+                A teoria sugere que os gatos não são animais terrestres, mas sim seres extraterrestres enviados para realizar uma missão específica em nosso planeta. Há relatos históricos que apontam para o fato de que os gatos eram considerados seres sagrados em diferentes culturas e até mesmo associados a figuras divinas. Isso poderia indicar que os gatos têm uma origem muito mais mística do que se pensava anteriormente. <br><br>
+                    
+                Além disso, há teóricos que acreditam que os felinos possuem habilidades telepáticas e são capazes de se comunicar com outras espécies alienígenas. Essa crença baseia-se em relatos de pessoas que afirmam terem visto gatos reagindo a estímulos que não são perceptíveis aos seres humanos, ou até mesmo se comportando de maneira incomum durante eventos astronômicos, como uma aurora boreal. Esses e outros indícios foram interpretados como sinais de que os gatos seriam seres interplanetários.</p>
+            </div>
+
+            <div class="sidebar">
+                <h1>Artigos Relacionados</h1>
+                <div class="card">
+                    <img src="https://s3-alpha-sig.figma.com/img/bb2c/37cb/78d64222d17af9aba981cae09d3ee202?Expires=1702252800&Signature=qV9u7yJmd~wzHMyUwPzIhTRzOG~LXdrmrVubH5Du2j3fVLsX5KlZrlyBafJFHHtvNN77lzm8FgbpzxqUF3Zptd7QRbpHMHDjdRBURQfFXZXqk44t3bh7wN5vGXV~V1~~oP4p221oUOkMGMTW3gl79PcEbfIS0D74KcH-b3Btkrw1L9ogza4horPHvWM-R-1zs6x3gZIGbsW5Zk3Q~55-Im4aiZ1xlpbfv4IjmnWEFAmEjk6KE6O1X9ZbDjsCfJVLE-5E9It4ti1XS8Hixo8tZMP9NHSI-h3l9zp-hxCFN3EY9qDdIlIszqkB2pdaITQNR9HRmKf013xTAR5uPwu-9w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                    <div class="card-text">
+                        <h2>Sábado preguiçoso</h2>
+                        <p>Descubra atividades interessantes para fazer com seu pet durante os finais de semana.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://s3-alpha-sig.figma.com/img/e9f9/5d70/a929ea1f2104d0ca9597ec44f466bce6?Expires=1702252800&Signature=ge7Wi0kVHVc3fPPL1ophZlh3Q9neFEP15W~Td2DP9OaUZrPubCg1w~ZBQ24ACQJo09hFxFBo7McWcMjYBLjftpPFFZlr7yptAoEVPKP0e~DY9G05CyuNOwhHskfi4GhWh1QsewqmFf5CN5GRRGGFDLjEAeCRD0Q4ypOoXOdG5qxsw-Y-D3Xr3NRPwBXs5BABRy--VbFHoiTSzRI6Wg56V1N5agwmryAWMatXhVUsc7m4Jcy8yH6gGHlw9GacKOtu4yIFp5CWldgKqv6rfu6yNEjX8A0RlraiQOnDfWvr1h73aogHCgHJPn8IReGRTADQ5u11POVoiUmyR35NRCJz1g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                    <div class="card-text">
+                        <h2>Balaio de gatos</h2>
+                        <p>Como evitar confusões entre seus gatíneos e acostumá-los desde filhotes.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://s3-alpha-sig.figma.com/img/162d/de55/d1b066a60ed109b0fe130f5cb1b86cb6?Expires=1702252800&Signature=a39fobtSMwrbheD-ybgBhdUNAbX~khHqPF3Adq5yUQxFYTD4I~HmP494f~fJL-VqYnywR~oJp9hQdYgVBIoJwtMqqkbd-KnjjxqsZxTNXm9Crm48D6YENxUc13JvxM-0QxIL6BlZvRSkwd4m8ST7j20gyN29g3SiQnHjHQUKCXoD-PKxR2W3gIgXrn26h5F~I985d4GZYJu5216sJ26uVjkLvfOlBH50MFD4ICVkYtIgjjbYiB4n7cSnm-zyraHtMYe0tP3ioSAdOjZnT0REQOsrbF4jP2I3N~yr15AclB-HWDkD0dwAhyaW17u8apeoIloxK4U6fEVZ2ZVYpDj0Og__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                    <div class="card-text">
+                        <h2>Cartela de cores</h2>
+                        <p>Seu gato é inverno intenso? Verão profundo? Descubra as cores que mais combinam com seu bichano.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://s3-alpha-sig.figma.com/img/2ca8/56fa/0411e6335bbd672ce87880315ad40b83?Expires=1702252800&Signature=PsjvfQ1lonsdbpgTUNPJTDGTuiiNGQTU6FgRBWYcmuQm~vUo7kMEHY-8WfKjgBxgqAj5pmoM89C3zuv2WWlL7WxyS--vgLHO1t89qHZcY4HfYl-i5TX6GrlKUa-6EAl69FBtk1w5wQOQiuX3JxhwdVZqtke4wihNkt0uodk7BYLiQnpRVrEyEGcj4rGNl~Xn71HjtNL3fh8PT-0oI0OJgBZ8HFnOLoVnhDtLUzWDajkoW7xjZ5lLvSyDBO4iCz1nmu89Bz-jGtWrDiWZsj767xl9-3hElOvV-8YI70uCLGv3ZXyIlc-sqdTODmvrseWB0WVq1k5Byy0~cbmz9NB45g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                    <div class="card-text">
+                        <h2>Os gatos sentem frio?</h2>
+                        <p>Preparem-se para a frente fria que vem para o país da melhor maneira possível.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://s3-alpha-sig.figma.com/img/e9f8/b9d0/a737dde5ce3781586ce435f2a9985c8e?Expires=1702252800&Signature=VjLV23AQxqpQeYT-OGUA8y-raSTPP2tRY3NUPQwrLwTJM3O0iPEaLrJy6uu7IKeIiF8Rs8mnPaIDhQzcn9HkX2a6hctEtUUm99RMJCeTkupmSlawn0zk98WCf7PxBEs49vMBXBO9FPlXIR46lQ35~1a-h8FxcCnNQ-pS7IX1m3zKYskPh2wH1RSPhmdOYxTetSUNjHaP3rM76B2-4BWOmVmfDSG5Dc29cGP~d2XwYTwqsim293wRgVizXCUfMaWoLYfpYKlR9u9xjkbbcJWj7rQ6f9d855jEeQ~JHvBvOCBakkaU0z-OUCGq4R1eC~QL5N~9WuwVyoj3VwNwQxNV0Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                    <div class="card-text">
+                        <h2>Conheça o Moacir</h2>
+                        <p>Moacir é o gatinho da semana do nosso blog. Venha conhecer sua história de superação.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2023 - Rocketseat Explorer</p>
+        </footer>
+    </div>
+</body>
+</html>
